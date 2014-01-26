@@ -254,7 +254,6 @@
 	  			axisArea[0].y = axisY;
 
 	  			if (needRepain) {
-	  				console.log(axisX, getMaxAxisX(axisY))
 		  			repain(axisY);
 		  		}
 	  		} else {
@@ -275,8 +274,6 @@
 
 	  		var yList = listByAxisY();
 	  		var innerText = '';
-
-	  		console.log(yList)
 
 	  		for (var key in yList) {
 	  			if (yList.hasOwnProperty(key)) {
