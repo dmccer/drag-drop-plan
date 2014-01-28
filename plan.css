@@ -1,0 +1,44 @@
+body {
+	background-color: #333333;
+}
+.data-info {
+	color: #fff;
+}
+.to-plan-list {
+	margin-bottom: 1em;
+	height: 50px;
+}
+.plan {
+	display: inline-block;
+	margin-right: 1em;
+	box-sizing: border-box;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 10px;
+	background-color: #f2f2f2;
+	border: 2px solid #f2f2f2;
+  z-index: 1;
+}
+.planed-table {
+	position: relative;
+	width: 1035px;
+	height: 520px;
+	border: 2px solid #ff9900;
+	overflow: auto;
+}
+.planed-table.over {
+	border: 2px dashed #ccc;
+}
+.planed-table .plan {
+	position: absolute;
+	margin-right: 0;
+}
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
